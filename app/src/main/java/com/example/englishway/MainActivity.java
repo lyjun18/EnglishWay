@@ -8,10 +8,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
-    private ImageView myImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         //取得控制項物件
         initViews();
         //設定監聽事件
-        setListensers();
+        setListeners();
     }
 
     private Button button_work;
@@ -32,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
     //取得控制項物件
     private void initViews()
     {
-        button_work = (Button)findViewById(R.id.button_work);
-        button_pet = (Button)findViewById(R.id.button_pet);
+        button_work = findViewById(R.id.button_work);
+        button_pet = findViewById(R.id.button_pet);
     }
 
     private void initData()
@@ -41,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //設定監聽事件
-    private void setListensers()
+    private void setListeners()
     {
         button_work.setOnClickListener(clicWork);
         button_pet.setOnClickListener(clicPet);
@@ -78,5 +76,11 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void clickWords(View view) {
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, WordsActivity.class);
+        startActivity(intent);
     }
 }

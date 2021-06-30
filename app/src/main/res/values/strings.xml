@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">EnglishWay</string>
+    <string name="button_shop">商店</string>
+    <string name="button_words">單字</string>
+    <string name="button_pet">寵物</string>
+    <string name="button_work">關卡</string>
+    <string name="button_back">返回</string>
 </resources>
