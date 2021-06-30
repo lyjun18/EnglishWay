@@ -2,6 +2,7 @@ package com.example.englishway;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -49,13 +50,17 @@ public class MainActivity extends AppCompatActivity {
     private View.OnClickListener clicWork = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            //TODO
+            Intent intent = new Intent();
+            intent.setClass(MainActivity.this, WorkActivity.class);
+            startActivity(intent);
         }
     };
     private View.OnClickListener clicPet = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            //TODO
+            Intent intent = new Intent();
+            intent.setClass(MainActivity.this, PetActivity.class);
+            startActivity(intent);
         }
     };
 

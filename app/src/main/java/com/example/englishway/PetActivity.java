@@ -6,18 +6,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class WorkActivity extends AppCompatActivity {
+public class PetActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_work);
+        setContentView(R.layout.activity_pet);
         //取得控制項物件
         initViews();
         //設定監聽事件
         setListensers();
     }
-
     private Button button_back;
 
     private void initViews(){
@@ -30,7 +29,7 @@ public class WorkActivity extends AppCompatActivity {
     private View.OnClickListener backtoMain = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            WorkActivity.this.finish();
+            PetActivity.this.finish();
         }
     };
 
