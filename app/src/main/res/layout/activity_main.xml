@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/button_work"
+            android:layout_width="111dp"
+            android:layout_height="136dp"
+            android:text="關卡"
+            app:cornerRadius="50pt"
+            app:strokeColor="#FFFFFF"
+            app:strokeWidth="4pt" />
+
+        <Button
+            android:id="@+id/button_pet"
+            android:layout_width="111dp"
+            android:layout_height="136dp"
+            android:text="寵物"
+            app:cornerRadius="50pt"
+            app:strokeColor="#FFFFFF"
+            app:strokeWidth="4pt" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
