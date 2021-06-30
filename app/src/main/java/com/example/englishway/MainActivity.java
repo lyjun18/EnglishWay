@@ -41,11 +41,11 @@ public class MainActivity extends AppCompatActivity {
     //設定監聽事件
     private void setListeners()
     {
-        button_work.setOnClickListener(clicWork);
-        button_pet.setOnClickListener(clicPet);
+        button_work.setOnClickListener(clickWork);
+        button_pet.setOnClickListener(clickPet);
     }
 
-    private View.OnClickListener clicWork = new View.OnClickListener() {
+    private View.OnClickListener clickWork = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent();
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
     };
-    private View.OnClickListener clicPet = new View.OnClickListener() {
+    private View.OnClickListener clickPet = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent();
@@ -81,6 +81,12 @@ public class MainActivity extends AppCompatActivity {
     public void clickWords(View view) {
         Intent intent = new Intent();
         intent.setClass(MainActivity.this, WordsActivity.class);
+        startActivity(intent);
+    }
+
+    public void clickShop(View view) {
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, ShopActivity.class);
         startActivity(intent);
     }
 }
