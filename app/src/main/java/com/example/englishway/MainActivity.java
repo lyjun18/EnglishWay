@@ -26,12 +26,16 @@ public class MainActivity extends AppCompatActivity {
 
     private Button button_work;
     private Button button_pet;
+    private Button button_words;
+    private Button button_shop;
 
     //取得控制項物件
     private void initViews()
     {
         button_work = findViewById(R.id.button_work);
         button_pet = findViewById(R.id.button_pet);
+        button_words = findViewById(R.id.button_words);
+        button_shop = findViewById(R.id.button_shop);
     }
 
     private void initData()
@@ -43,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
     {
         button_work.setOnClickListener(clickWork);
         button_pet.setOnClickListener(clickPet);
+        button_words.setOnClickListener(clickWords);
+        button_shop.setOnClickListener(clickShop);
     }
 
     private View.OnClickListener clickWork = new View.OnClickListener() {
@@ -59,6 +65,22 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent();
             intent.setClass(MainActivity.this, PetActivity.class);
             startActivity(intent);
+        }
+    };
+    private View.OnClickListener clickWords = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent();
+            intent.setClass(MainActivity.this, WordsActivity.class);
+            startActivity(intent);
+        }
+    };
+    private View.OnClickListener clickShop = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent();
+          intent.setClass(MainActivity.this, ShopActivity.class);
+          startActivity(intent);
         }
     };
 
@@ -78,15 +100,15 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void clickWords(View view) {
-        Intent intent = new Intent();
-        intent.setClass(MainActivity.this, WordsActivity.class);
-        startActivity(intent);
-    }
+//    public void clickWords(View view) {
+//        Intent intent = new Intent();
+//        intent.setClass(MainActivity.this, WordsActivity.class);
+//        startActivity(intent);
+//    }
 
-    public void clickShop(View view) {
-        Intent intent = new Intent();
-        intent.setClass(MainActivity.this, ShopActivity.class);
-        startActivity(intent);
-    }
+//    public void clickShop(View view) {
+//        Intent intent = new Intent();
+//        intent.setClass(MainActivity.this, ShopActivity.class);
+//        startActivity(intent);
+//    }
 }
