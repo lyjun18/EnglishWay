@@ -15,7 +15,7 @@ public class WorkActivity extends AppCompatActivity {
         //取得控制項物件
         initViews();
         //設定監聽事件
-        setListensers();
+        setListeners();
     }
 
     private Button button_back;
@@ -23,7 +23,7 @@ public class WorkActivity extends AppCompatActivity {
     private void initViews(){
         button_back = (Button)findViewById(R.id.button_back);
     }
-    private void setListensers(){
+    private void setListeners(){
         button_back.setOnClickListener(backtoMain);
     }
 

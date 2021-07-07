@@ -10,10 +10,11 @@
         android:id="@+id/scrollview_works"
         android:layout_width="415dp"
         android:layout_height="0dp"
-        android:layout_marginTop="186dp"
-        android:layout_marginBottom="213dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="294dp"
         app:layout_constraintBottom_toTopOf="@+id/button_back"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -24,39 +25,73 @@
 
             <Button
                 android:id="@+id/work_1"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="210dp"
-                android:layout_height="289dp"
-                android:text="@string/button_work"
+                style="@style/worksButtonStyle"
+                android:text="@string/button_work1"
                 app:strokeColor="#707070"
                 app:strokeWidth="2dp" />
 
             <Button
                 android:id="@+id/work_2"
-                android:layout_width="210dp"
-                android:layout_height="289dp"
-                android:text="@string/button_work"
-                style="?android:attr/buttonBarButtonStyle"
+                style="@style/worksButtonStyle"
+                android:text="@string/button_work2"
                 app:strokeColor="#707070"
-                app:strokeWidth="2dp"/>
+                app:strokeWidth="2dp" />
 
             <Button
                 android:id="@+id/work_3"
-                android:layout_width="210dp"
-                android:layout_height="289dp"
-                android:text="@string/button_work"
-                style="?android:attr/buttonBarButtonStyle"
+                style="@style/worksButtonStyle"
+                android:text="@string/button_work3"
                 app:strokeColor="#707070"
-                app:strokeWidth="2dp"/>
+                app:strokeWidth="2dp" />
 
             <Button
                 android:id="@+id/work_4"
-                android:layout_width="210dp"
-                android:layout_height="289dp"
-                android:text="@string/button_work"
-                style="?android:attr/buttonBarButtonStyle"
+                style="@style/worksButtonStyle"
+                android:text="@string/button_work4"
                 app:strokeColor="#707070"
-                app:strokeWidth="2dp"/>
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/work_5"
+                style="@style/worksButtonStyle"
+                android:text="@string/button_work5"
+                app:strokeColor="#707070"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/work_6"
+                style="@style/worksButtonStyle"
+                android:text="@string/button_work6"
+                app:strokeColor="#707070"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/work_7"
+                style="@style/worksButtonStyle"
+                android:text="@string/button_work7"
+                app:strokeColor="#707070"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/work_8"
+                style="@style/worksButtonStyle"
+                android:text="@string/button_work8"
+                app:strokeColor="#707070"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/work_9"
+                style="@style/worksButtonStyle"
+                android:text="@string/button_work9"
+                app:strokeColor="#707070"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/work_10"
+                style="@style/worksButtonStyle"
+                android:text="@string/button_work10"
+                app:strokeColor="#707070"
+                app:strokeWidth="2dp" />
 
         </LinearLayout>
     </HorizontalScrollView>

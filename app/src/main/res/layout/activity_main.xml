@@ -8,59 +8,47 @@
 
     <Button
         android:id="@+id/button_work"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginLeft="88dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginRight="27dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:text="@string/button_work"
         app:cornerRadius="50pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button_pet"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_words"
+        app:layout_constraintStart_toEndOf="@+id/button_words"
         app:strokeColor="#FFFFFF"
         app:strokeWidth="4pt" />
 
     <Button
         android:id="@+id/button_pet"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="74dp"
-        android:layout_marginRight="74dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:text="@string/button_pet"
         app:cornerRadius="50pt"
-        app:layout_constraintBottom_toBottomOf="@+id/button_work"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_work"
-        app:layout_constraintTop_toTopOf="@+id/button_work"
         app:strokeColor="#FFFFFF"
         app:strokeWidth="4pt" />
 
     <Button
         android:id="@+id/button_words"
-        android:layout_width="76dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginBottom="30dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:text="@string/button_words"
-        app:layout_constraintBottom_toTopOf="@+id/button_work"
+        app:cornerRadius="50pt"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_shop" />
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="4pt" />
 
     <Button
         android:id="@+id/button_shop"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="367dp"
-        android:layout_marginBottom="33dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
         android:text="@string/button_shop"
-        app:layout_constraintBottom_toTopOf="@+id/button_words"
-        app:layout_constraintEnd_toEndOf="@+id/button_words"
-        app:layout_constraintStart_toStartOf="@+id/button_words"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
