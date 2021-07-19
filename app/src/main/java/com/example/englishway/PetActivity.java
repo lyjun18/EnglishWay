@@ -17,13 +17,15 @@ public class PetActivity extends AppCompatActivity {
         //設定監聽事件
         setListensers();
     }
-    private Button button_back;
+    //private Button button_back;
 
     private void initViews(){
-        button_back = (Button)findViewById(R.id.button_back);
+
+        //button_back = (Button)findViewById(R.id.button_back);
     }
     private void setListensers(){
-        button_back.setOnClickListener(backtoMain);
+
+        //button_back.setOnClickListener(backtoMain);
     }
 
     private View.OnClickListener backtoMain = new View.OnClickListener() {

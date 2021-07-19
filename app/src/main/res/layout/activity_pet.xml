@@ -1,30 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".PetActivity">
 
-    <Button
-        android:id="@+id/button_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_back"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.13999999" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_pet"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteY="731dp">
+
+                <Button
+                    android:id="@+id/pet_1"
+                    style="@style/petsButtonStyle"
+                    android:layout_weight="1"
+                    android:text="@string/pet_1" />
+
+                <Button
+                    android:id="@+id/pet_2"
+                    style="@style/petsButtonStyle"
+                    android:layout_weight="1"
+                    android:text="@string/pet_2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/pet_3"
+                    style="@style/petsButtonStyle"
+                    android:layout_weight="1"
+                    android:text="@string/pet_3" />
+
+                <Button
+                    android:id="@+id/pet_4"
+                    style="@style/petsButtonStyle"
+                    android:layout_weight="1"
+                    android:text="@string/pet_4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/pet_5"
+                    style="@style/petsButtonStyle"
+                    android:layout_weight="1"
+                    android:text="@string/pet_5" />
+
+                <Button
+                    android:id="@+id/pet_6"
+                    style="@style/petsButtonStyle"
+                    android:layout_weight="1"
+                    android:text="@string/pet_6" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -19,4 +19,10 @@
     <string name="button_work8">關卡8</string>
     <string name="button_work9">關卡9</string>
     <string name="button_work10">關卡10</string>
+    <string name="pet_1">寵物1</string>
+    <string name="pet_2">寵物2</string>
+    <string name="pet_3">寵物3</string>
+    <string name="pet_4">寵物4</string>
+    <string name="pet_5">寵物5</string>
+    <string name="pet_6">寵物6</string>
 </resources>
