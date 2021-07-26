@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EnglishWay">
-        <activity android:name=".WordsActivity"></activity>
+        <activity android:name=".FeedActivity"></activity>
+        <activity android:name=".PetActivity" />
+        <activity android:name=".WordsActivity" />
         <activity android:name=".ShopActivity" />
         <activity android:name=".AllWordsActivity" />
-        <activity android:name=".PetActivity" />
+        <activity android:name=".PetsActivity" />
         <activity android:name=".WorkActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

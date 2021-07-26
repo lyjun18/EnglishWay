@@ -25,4 +25,6 @@
     <string name="pet_4">寵物4</string>
     <string name="pet_5">寵物5</string>
     <string name="pet_6">寵物6</string>
+    <string name="feed">餵食</string>
+    <string name="evolve">進化</string>
 </resources>
