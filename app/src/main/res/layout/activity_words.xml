@@ -18,18 +18,18 @@
                     android:orientation="vertical" >
 
                         <Button
-                            android:id="@+id/word4500"
-                            android:layout_width="match_parent"
-                            android:layout_height="150dp"
-                            android:layout_margin="10dp"
-                            android:text="@string/_4500" />
-
-                        <Button
                             android:id="@+id/word2000"
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
                             android:layout_margin="10dp"
                             android:text="@string/_2000" />
+
+                        <Button
+                            android:id="@+id/word4500"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            android:text="@string/_4500" />
 
                         <Button
                             android:id="@+id/word7000"
