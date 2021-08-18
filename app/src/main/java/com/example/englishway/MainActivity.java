@@ -3,13 +3,17 @@ package com.example.englishway;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.Date;
+
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +26,10 @@ public class MainActivity extends AppCompatActivity {
         initViews();
         //設定監聽事件
         setListeners();
+        save();
     }
+
+    SharedPreferences record = getSharedPreferences("record", MODE_PRIVATE);
 
     private Button button_work;
     private Button button_pet;
@@ -30,21 +37,18 @@ public class MainActivity extends AppCompatActivity {
     private Button button_shop;
 
     //取得控制項物件
-    private void initViews()
-    {
+    private void initViews() {
         button_work = findViewById(R.id.button_work);
         button_pet = findViewById(R.id.button_pet);
         button_words = findViewById(R.id.button_words);
         button_shop = findViewById(R.id.button_shop);
     }
 
-    private void initData()
-    {
+    private void initData() {
     }
 
     //設定監聽事件
-    private void setListeners()
-    {
+    private void setListeners() {
         button_work.setOnClickListener(clickWork);
         button_pet.setOnClickListener(clickPet);
         button_words.setOnClickListener(clickWords);
@@ -79,14 +83,13 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent();
-          intent.setClass(MainActivity.this, ShopActivity.class);
-          startActivity(intent);
+            intent.setClass(MainActivity.this, ShopActivity.class);
+            startActivity(intent);
         }
     };
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu)
-    {
+    public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
@@ -106,9 +109,14 @@ public class MainActivity extends AppCompatActivity {
 //        startActivity(intent);
 //    }
 
-//    public void clickShop(View view) {
+    //    public void clickShop(View view) {
 //        Intent intent = new Intent();
 //        intent.setClass(MainActivity.this, ShopActivity.class);
 //        startActivity(intent);
 //    }
+    private void save() {
+        record.edit()
+                .putString("Date",new Date(System.currentTimeMillis()).toString())
+                .commit();
+    }
 }

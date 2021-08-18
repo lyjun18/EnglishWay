@@ -52,22 +52,22 @@ public class PetsActivity extends AppCompatActivity {
             Bundle bundle = new Bundle();
             switch (v.getId()){
                 case R.id.pet_1:
-                    bundle.putString("ONCLICK_PET", "寵物1");
+                    bundle.putString("ONCLICK_PET", "1");
                     break;
                 case R.id.pet_2:
-                    bundle.putString("ONCLICK_PET", "寵物2");
+                    bundle.putString("ONCLICK_PET", "2");
                     break;
                 case R.id.pet_3:
-                    bundle.putString("ONCLICK_PET", "寵物3");
+                    bundle.putString("ONCLICK_PET", "3");
                     break;
                 case R.id.pet_4:
-                    bundle.putString("ONCLICK_PET", "寵物4");
+                    bundle.putString("ONCLICK_PET", "4");
                     break;
                 case R.id.pet_5:
-                    bundle.putString("ONCLICK_PET", "寵物5");
+                    bundle.putString("ONCLICK_PET", "5");
                     break;
                 case R.id.pet_6:
-                    bundle.putString("ONCLICK_PET", "寵物6");
+                    bundle.putString("ONCLICK_PET", "6");
                     break;
             }
             intent.putExtras(bundle);

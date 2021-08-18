@@ -19,6 +19,23 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="342dp"
+        app:layout_constraintBottom_toTopOf="@+id/earn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/earn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="收成金幣"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="158dp" />
+
+    <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="412dp"
         android:layout_height="0dp"

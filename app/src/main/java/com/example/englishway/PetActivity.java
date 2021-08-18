@@ -26,15 +26,18 @@ public class PetActivity extends AppCompatActivity {
     private TextView pet_name;
     private Button button_feed;
     private Button button_evolve;
+    private Button button_earn;
 
     private void initViews() {
         pet_name = findViewById(R.id.textView);
         button_feed = findViewById(R.id.button_feed);
         button_evolve = findViewById(R.id.button_evolve);
+        button_earn = findViewById(R.id.earn);
     }
 
     private void setListeners() {
         button_feed.setOnClickListener(feedPet);
+        button_earn.setOnClickListener(earnMoney);
     }
 
     private void showResults() {
@@ -57,6 +60,12 @@ public class PetActivity extends AppCompatActivity {
             intent.setClass(PetActivity.this, FeedActivity.class);
             intent.putExtras(bundle);
             startActivity(intent);
+        }
+    };
+    private View.OnClickListener earnMoney = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            //TODO
         }
     };
 
