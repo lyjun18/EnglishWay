@@ -16,7 +16,7 @@ import java.util.Date;
 
 import static android.content.Context.MODE_PRIVATE;
 
-public class Pets {
+public class Pets extends Drawable{
     String name; //寵物名
     int hunger; //飽足感
     int evolve; //進化次數
@@ -38,7 +38,7 @@ public class Pets {
 
     public int earnMoney() {
         int earned = 0;
-        SharedPreferences record = Context.getSharedPreferences("record", MODE_PRIVATE);
+        SharedPreferences record = Context.getSharedPreferences("record", 0);
         if (hunger <= 70) {
             return earned;
         }
@@ -49,5 +49,25 @@ public class Pets {
         earned+= (1+x)*10*x;
         return earned;
 
+    }
+
+    @Override
+    public void draw(@NonNull Canvas canvas) {
+
+    }
+
+    @Override
+    public void setAlpha(int alpha) {
+
+    }
+
+    @Override
+    public void setColorFilter(@Nullable ColorFilter colorFilter) {
+
+    }
+
+    @Override
+    public int getOpacity() {
+        return PixelFormat.TRANSLUCENT;
     }
 }
